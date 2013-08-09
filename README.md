@@ -1,9 +1,9 @@
 ## Html5mediator ##
 
-**Html5mediator** is a simple extension for MediaWiki that defines a new tag (&lt;html5media&gt;) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, but has minimal extra features (*e.g.* defining video height and/or width) at this point in time.
+**Html5mediator** is a simple extension for MediaWiki that defines a new tag (`<html5media>`) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, but has minimal extra features (e.g. defining video height and/or width) at this point in time.
 
 ### Obtaining ###
-The latest version of Html5mediator (0.1 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
+The latest version of Html5mediator (0.1 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).  For those who are unable or unwilling to obtain a github account, the simplest way to obtain Html5mediator is by downloading the [ZIP](https://github.com/lightbinder/Html5mediator/archive/master.zip) file.
 
 ### Usage ###
 1. Unzip `Html5mediator-0.1.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
@@ -16,7 +16,7 @@ The latest version of Html5mediator (0.1 at the time of this writing) is always 
 4. When you want to embed a video or audio file onto a wiki page, you can now use the following markup:
  
 	> &lt;html5media&gt;mediafile&lt;/html5media&gt; 
-5. `mediafile` can be one of two things: (a) a fully-qualified URL to a media file or (b) a MediaWiki file tag (*e.g.* `File:Video.mp4`) if you uploaded an audio/video file to your wiki *a priori* and now want to embed it.
+5. `mediafile` can be one of two things: (a) a fully-qualified URL to a media file or (b) a MediaWiki file tag (e.g. `File:Video.mp4`) if you uploaded an audio/video file to your wiki *a priori* and now want to embed it.
 6. ...
 7. Profit ...?
 
@@ -24,7 +24,7 @@ The latest version of Html5mediator (0.1 at the time of this writing) is always 
 Additional features to come in the next release include definable custom video height and width.
 
 ### Legal and Acknowledgments ###
-Html5mediator is licensed under the GNU GPL.  It is based off of the parser_hook example extension, and contains a few lines of code shamelessly borrowed from Swiftlytilting's [Mediawikiplayer](http://www.mediawiki.org/wiki/Extension:MediawikiPlayer) extension.  It utilizes [html5media](http://html5media.info/) for audio and video playback.
+Html5mediator is licensed under the GNU GPL.  It is based on the [parser_hook](https://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/examples/) example extension, and contains a few lines of code shamelessly borrowed from Swiftlytilting's [MediawikiPlayer](http://www.mediawiki.org/wiki/Extension:MediawikiPlayer) extension.  It utilizes [html5media](http://html5media.info/) for audio and video playback.
 
 ### Changelog ###
 <table>
