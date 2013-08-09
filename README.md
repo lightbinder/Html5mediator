@@ -23,7 +23,7 @@ The latest version of Html5mediator (0.1 at the time of this writing) is always 
 Additional features to come in the next release include definable custom video height and width.
 
 ### Legal and Acknowledgments ###
-Html5mediator is licensed under the GNU GPL.  It is based off of the ParserHook example extension, and contains a few lines of code shamelessly borrowed from Swiftlytilting's [Mediawikiplayer](http://www.mediawiki.org/wiki/Extension:MediawikiPlayer) extension.
+Html5mediator is licensed under the GNU GPL.  It is based off of the parser_hook example extension, and contains a few lines of code shamelessly borrowed from Swiftlytilting's [Mediawikiplayer](http://www.mediawiki.org/wiki/Extension:MediawikiPlayer) extension.  It utilizes [html5media](http://html5media.info/) for audio and video playback.
 
 ### Changelog ###
 <table>
