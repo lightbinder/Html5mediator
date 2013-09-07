@@ -23,7 +23,10 @@ function wfParserHookParse( $data, $params, $parser, $frame )
 	global $wgContLang;
 
 	// escape from XSS vulnerabilities
-	$params = htmlspecialchars( print_r( $params, true ) );
+	foreach ($params as $param => $paramval)
+	{
+		$params[$param] = htmlspecialchars ( $paramval );
+	}
 	$data = htmlspecialchars( $data );
 
 	/*
@@ -70,13 +73,21 @@ function wfParserHookParse( $data, $params, $parser, $frame )
 		case "webm":
 		case "mov":
 		case "ogv":
-			$code = $code . "<video src=\"" . $data . "\" controls preload></video>";
+			$code = $code . "<video src=\"" . $data . "\" controls preload";
+			foreach ($params as $param => $paramval) {
+				$code = $code . " " . $param . "=\"" . $paramval . "\"";
+			}
+			$code = $code . "></video>";
 			break;
 
 		// audio file extensions
 		case "mp3":
 		case "ogg":
-			$code = $code . "<audio src=\"" . $data . "\" controls preload></audio>";
+			$code = $code . "<audio src=\"" . $data . "\" controls preload";
+			foreach ($params as $param => $paramval) {
+				$code = $code . " " . $param . "=\"" . $paramval . "\"";
+			}
+			$code = $code . "></audio>";
 			break;
 
 		// unrecognized file extensions
