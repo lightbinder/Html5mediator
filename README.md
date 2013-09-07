@@ -36,7 +36,7 @@ Html5mediator is licensed under the GNU GPL.  It is based on the [parser_hook](h
 	<tr>
 		<td>0.2</td>
 		<td>6 September 2013</td>
-		<td>Added support user-defined height and width.</td>
+		<td>Added support for user-defined height and width.</td>
 	</tr>
 	<tr>
 		<td>0.1</td>
