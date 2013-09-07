@@ -74,7 +74,8 @@ function wfParserHookParse( $data, $params, $parser, $frame )
 		case "mov":
 		case "ogv":
 			$code = $code . "<video src=\"" . $data . "\" controls preload";
-			foreach ($params as $param => $paramval) {
+			foreach ($params as $param => $paramval)
+			{
 				$code = $code . " " . $param . "=\"" . $paramval . "\"";
 			}
 			$code = $code . "></video>";
@@ -84,7 +85,8 @@ function wfParserHookParse( $data, $params, $parser, $frame )
 		case "mp3":
 		case "ogg":
 			$code = $code . "<audio src=\"" . $data . "\" controls preload";
-			foreach ($params as $param => $paramval) {
+			foreach ($params as $param => $paramval)
+			{
 				$code = $code . " " . $param . "=\"" . $paramval . "\"";
 			}
 			$code = $code . "></audio>";
