@@ -18,7 +18,7 @@ The latest version of Html5mediator (0.2 at the time of this writing) is always 
 5. `mediafile` can be one of two things: (a) a fully-qualified URL to a media file or (b) a MediaWiki file tag (*e.g.* `File:Video.mp4`) if you uploaded an audio/video file to your wiki *a priori* and now want to embed it.
 6. As of version 0.2, you can define a custom height and width for video files.  For instance, if you wanted to play `File:Video.mp4` at 640x480, you would write:
 
-	> &lt;html5media width="640" height="480"&gt;mediafile&lt;/html5media&gt;
+	> &lt;html5media width="640" height="480"&gt;File:Video.mp4&lt;/html5media&gt;
 	
 ### Planned Functionality ###
 If there is enough demand for such functionality, future versions may allow for video embedding from popular video streaming site sources (*e.g.* YouTube), as well as some of the more advanced features (*e.g.* automatically serving different versions of video files depending on the user's device) that are present in [html5media](http://html5media.info/) itself.
