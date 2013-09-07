@@ -2,11 +2,6 @@
 **Html5mediator** is a simple extension for MediaWiki that defines a new tag (`<html5media>`) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, but has minimal extra features (e.g. defining video height and/or width) at this point in time.
 
 ### Obtaining ###
-The latest version of Html5mediator (0.1 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).  For those who are unable or unwilling to obtain a github account, the simplest way to obtain Html5mediator is by downloading the [ZIP](https://github.com/lightbinder/Html5mediator/archive/master.zip) file.
-=======
-**Html5mediator** is a simple extension for MediaWiki that defines a new tag (&lt;html5media&gt;) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, and allows for custom video height and width, but has few extra features at this time.
-
-### Obtaining ###
 The latest version of Html5mediator (0.2 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
 
 ### Usage ###
