@@ -34,13 +34,32 @@ Html5mediator is licensed under the GNU GPL.  It is based on the [parser_hook](h
 		<td>Comments</td>
 	</tr>
 	<tr>
+		<td>0.2.1</td>
+		<td>7 September 2013</td>
+		<td>
+			<ul>
+				<li>Added URL information in $wgExtensionCredits.</li>
+				<li>Normalized indentation style throughout the program.</li>
+				<li>Miscellaneous code cleanup.</li>
+			</ul>
+		</td>
+	</tr>	
+	<tr>
 		<td>0.2</td>
 		<td>6 September 2013</td>
-		<td>Added support for user-defined height and width.</td>
+		<td>
+			<ul>
+				<li>Added support for user-defined height and width.</li>
+			</ul>
+		</td>
 	</tr>
 	<tr>
 		<td>0.1</td>
 		<td>8 August 2013</td>
-		<td>Initial release.</td>
+		<td>
+			<ul>
+				<li>Initial release.</li>
+			</ul>
+		</td>
 	</tr>
 </table>
