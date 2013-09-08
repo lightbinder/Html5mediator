@@ -11,24 +11,24 @@ $wgExtensionCredits['html5mediator'][] = array(
  	);
 
 /* Register the registration function */
-$wgHooks['ParserFirstCallInit'][] = 'wfParserHook';
+$wgHooks['ParserFirstCallInit'][] = 'wfHtml5Mediator';
 
-function wfParserHook( $parser )
+function wfHtml5Mediator($parser)
 {
-	$parser->setHook( 'html5media' , 'wfParserHookParse' );
+	$parser->setHook('html5media' , 'wfHtml5MediatorParse');
 	return true;
 }
 
-function wfParserHookParse( $data, $params, $parser, $frame )
+function wfHtml5MediatorParse($data, $params, $parser, $frame)
 {
 	global $wgContLang;
 
 	// escape from XSS vulnerabilities
 	foreach ($params as $param => $paramval)
 	{
-		$params[$param] = htmlspecialchars ( $paramval );
+		$params[$param] = htmlspecialchars ($paramval);
 	}
-	$data = htmlspecialchars( $data );
+	$data = htmlspecialchars($data);
 
 	/*
 	 * This block of code is borrowed from the fabulous
