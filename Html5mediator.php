@@ -63,7 +63,7 @@ function wfHtml5MediatorParse($data, $params, $parser, $frame)
 	// Get the file extension -- first check for a 3-char extension (mp3, mp4), then 4-char (webm)
 	if (substr($data, -4, 1) == ".") $ext = substr($data, -3);
 	else if (substr($data, -5, 1) == ".") $ext = substr($data, -4);
-	else if (strtolower(substr($data, 0, 23)) == "http://www.youtube.com/") $ext = "youtube";
+	else if (strtolower(substr($data, 0, 23)) == "http://www.youtube.com/" || strtolower(substr($data, 0, 24)) == "https://www.youtube.com/") $ext = "youtube";
 
 	// Write out the actual HTML
 	$code = "<script src=\"http://api.html5media.info/1.1.5/html5media.min.js\"></script>";
