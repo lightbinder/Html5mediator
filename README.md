@@ -2,10 +2,10 @@
 **Html5mediator** is a simple extension for MediaWiki that defines a new tag (`<html5media>`) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, but has minimal extra features (e.g. defining video height and/or width) at this point in time.
 
 ### Obtaining ###
-The latest version of Html5mediator (0.2 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
+The latest version of Html5mediator (0.2.1 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
 
 ### Usage ###
-1. Unzip `Html5mediator-0.2.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
+1. Unzip `Html5mediator-0.2.1.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
 2. Add the following code to the bottom of your `LocalSettings.php`:
 
 	> require_once "$IP/extensions/Html5mediatorHtml5mediator.php";
