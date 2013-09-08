@@ -2,10 +2,10 @@
 **Html5mediator** is a simple extension for MediaWiki that defines a new tag (`<html5media>`) which can be used to embed HTML5 video and/or audio.  It is stable enough for production use, but has minimal extra features (e.g. defining video height and/or width) at this point in time.
 
 ### Obtaining ###
-The latest version of Html5mediator (0.2.1 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
+The latest version of Html5mediator (0.3 at the time of this writing) is always available at [github.com/lightbinder/Html5mediator](https://github.com/lightbinder/Html5mediator).
 
 ### Usage ###
-1. Unzip `Html5mediator-0.2.1.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
+1. Unzip `Html5mediator-0.3.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
 2. Add the following code to the bottom of your `LocalSettings.php`:
 
 	> require_once "$IP/extensions/Html5mediatorHtml5mediator.php";
@@ -19,9 +19,13 @@ The latest version of Html5mediator (0.2.1 at the time of this writing) is alway
 6. As of version 0.2, you can define a custom height and width for video files.  For instance, if you wanted to play `File:Video.mp4` at 640x480, you would write:
 
 	> &lt;html5media width="640" height="480"&gt;File:Video.mp4&lt;/html5media&gt;
+
+7. As of version 0.3, you can embed YouTube files.  For instance, if you wanted to embed [this](http://www.youtube.com/watch?v=MGt25mv4-2Q) at 1280x720, you would write:
+
+	> &lt;html5media width="1280" height="720"&gt;http://www.youtube.com/watch?v=MGt25mv4-2Q&lt;/html5media&gt;
 	
 ### Planned Functionality ###
-If there is enough demand for such functionality, future versions may allow for video embedding from popular video streaming site sources (e.g. YouTube), as well as some of the more advanced features (e.g. automatically serving different versions of video files depending on the user's device) that are present in [html5media](http://html5media.info/) itself.
+If there is enough demand for such functionality, future versions may allow for video embedding from other popular video streaming site sources (e.g. DailyMotion), as well as some of the more advanced features (e.g. automatically serving different versions of video files depending on the user's device) that are present in [html5media](http://html5media.info/) itself.
 
 ### Legal and Acknowledgments ###
 Html5mediator is licensed under the GNU GPL.  It is based on the [parser_hook](https://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/examples/) example extension, and contains a few lines of code shamelessly borrowed from Swiftlytilting's [MediawikiPlayer](http://www.mediawiki.org/wiki/Extension:MediawikiPlayer) extension.  It utilizes [html5media](http://html5media.info/) for audio and video playback.
@@ -33,6 +37,15 @@ Html5mediator is licensed under the GNU GPL.  It is based on the [parser_hook](h
 		<td>Date</td>
 		<td>Comments</td>
 	</tr>
+	<tr>
+		<td>0.3</td>
+		<td>7 September 2013</td>
+		<td>
+			<ul>
+				<li>Added YouTube embedding.</li>
+			</ul>
+		</td>
+	</tr>	
 	<tr>
 		<td>0.2.1</td>
 		<td>7 September 2013</td>
