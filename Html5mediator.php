@@ -5,7 +5,8 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgExtensionCredits['html5mediator'][] = array(
 	'path' => __FILE__,
 	'name' => 'Html5mediator',
-	'description' => 'a simple hook for html5media',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Html5mediator',
+	'description' => 'A simple way to embed audio and video files in a wiki',
 	'author' => 'Seung Park'
  	);
 
