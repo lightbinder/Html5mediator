@@ -22,7 +22,7 @@ The latest version of Html5mediator (0.3.1 at the time of this writing) is alway
 
 7. As of version 0.3, you can embed YouTube files.  For instance, if you wanted to embed [this](http://www.youtube.com/watch?v=MGt25mv4-2Q) at 1280x720, you would write:
 
-	> &lt;html5media width="1280" height="720"&gt;http://www.youtube.com/watch?v=MGt25mv4-2Q&lt;/html5media&gt;
+	> &lt;html5media width="1280" height="720"&gt;http://www.youtube.com/watch?v=MGt25mv4-2Q</html5media&gt;
 	
 ### Planned Functionality ###
 If there is enough demand for such functionality, future versions may allow for video embedding from other popular video streaming site sources (e.g. DailyMotion), as well as some of the more advanced features (e.g. automatically serving different versions of video files depending on the user's device) that are present in [html5media](http://html5media.info/) itself.
