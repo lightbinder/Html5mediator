@@ -78,7 +78,7 @@ function wfHtml5MediatorParse($data, $params, $parser, $frame)
 			$code = $code . "<video src=\"" . $data . "\" controls preload";
 			foreach ($params as $param => $paramval)
 			{
-				$code = $code . " " . $param . "=\"" . $paramval . "\"";
+				$code = $code . " " . htmlspecialchars($param) . "=\"" . $paramval . "\"";
 			}
 			$code = $code . "></video>";
 			break;
@@ -89,7 +89,7 @@ function wfHtml5MediatorParse($data, $params, $parser, $frame)
 			$code = $code . "<audio src=\"" . $data . "\" controls preload";
 			foreach ($params as $param => $paramval)
 			{
-				$code = $code . " " . $param . "=\"" . $paramval . "\"";
+				$code = $code . " " . htmlspecialchars($param) . "=\"" . $paramval . "\"";
 			}
 			$code = $code . "></audio>";
 			break;
@@ -99,7 +99,7 @@ function wfHtml5MediatorParse($data, $params, $parser, $frame)
 			$code = "<iframe";
 			foreach ($params as $param => $paramval)
 			{
-				$code = $code . " " . $param . "=\"" . $paramval . "\"";
+				$code = $code . " " . htmlspecialchars($param) . "=\"" . $paramval . "\"";
 			}
 			$code = $code . " src=\"//www.youtube.com/embed/" . substr($data, -11) . "?rel=0\" frameborder=\"0\" allowfullscreen></iframe>";
 			break;
