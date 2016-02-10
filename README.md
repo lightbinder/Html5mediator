@@ -8,7 +8,7 @@ The latest version of Html5mediator (0.3.2 at the time of this writing) is alway
 1. Unzip `Html5mediator-0.3.2.zip` in your MediaWiki extensions directory.  A new subdirectory (`Html5mediator`) will be created, which contains a single file named `Html5mediator.php`.
 2. Add the following code to the bottom of your `LocalSettings.php`:
 
-	> require_once "$IP/extensions/Html5mediatorHtml5mediator.php";
+	> require_once "$IP/extensions/Html5mediator/Html5mediator.php";
 3. Register the audio/video file formats that you want MediaWiki to play.  For instance, if you wanted to play MP4 files, you would add the following to `LocalSettings.php`:
 
 	> $wgFileExtensions[] = 'mp4';
